@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Statistics = ({ stats}) => {
-    return(
-        <ul class="stat-list" >
-      {stats.map(stat => (
+const Statistics = ({stats}) => (
+      <ul class="stat-list" >
+        {stats.map(stat => (
           
           <li class="item" key={stat.id}>
             <span class="label">{stat.label}</span>
@@ -14,9 +13,17 @@ const Statistics = ({ stats}) => {
     
           ))}
         
-        </ul>
+      </ul>
     );
 
-}
+Statistics.propTypes = {
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.string.isRequired,
+          label: PropTypes.string.isRequired,
+          percentage: PropTypes.number.isRequired,
+        }),
+      ).isRequired,
+};
 
 export default Statistics;

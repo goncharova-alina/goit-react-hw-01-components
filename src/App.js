@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from './social-profile/Profile';
+// import Profile from './social-profile/Profile';
 import user from './social-profile/user.json';
 import Statistics from './statistics/Statistics/Statistics';
 import statisticalData from './statistics/statistical-data.json';

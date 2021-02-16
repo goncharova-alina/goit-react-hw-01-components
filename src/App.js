@@ -1,11 +1,13 @@
 import React from 'react';
 import Profile from './social-profile/Profile';
 import user from './social-profile/user.json';
-import Statistics from './statistics/Statistics';
+import Statistics from './statistics/Statistics/Statistics';
 import statisticalData from './statistics/statistical-data.json';
-import StatisticsTitle from './statistics/StatisticsTitle';
+import StatisticsTitle from './statistics/StatisticsTitle/StatisticsTitle';
 import friends from './friend/friends.json';
 import FriendList from './friend/friendList/FriendList';
+import TransactionHistory from "./transaction/TransactionHistory/TransactionHistory";
+import transactions from "./transaction/transactions.json";
 
 
 const App = () => {
